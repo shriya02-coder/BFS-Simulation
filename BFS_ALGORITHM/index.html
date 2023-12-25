@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="The tool allows you to visualize a BFS algorithm being run on a grid." />
+
+
+  <title>BFS Visualizer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+  
+</head>
+<body>
+  <center>
+  <h1>Breadh first search</h1>
+  <p>Breadth-first search is a graph traversal algorithm that starts traversing the graph from the root node and <br> explores all the neighboring nodes. Then, it selects the nearest node and explores all the unexplored nodes. <br>While using BFS for traversal, any node in the graph can be considered as the root node.</p>
+  <p> Time Complexity of BFS: O(V+E) where V is vertices and E is edges.</p>
+  <p>Applications of BFS algorithm:</p>
+<ol>
+<li>BFS can be used to find the neighboring locations from a given source location.</li>
+<li>BFS is used to determine the shortest path and minimum spanning tree.</li>
+<li>BFS can be used in web crawlers to create web page indexes.</li> </ol>
+
+  </center>
+  <br> <br> <br> <br> <br>
+
+  <div id="controls">
+    <div>
+      <div class="start-and-target">
+        <button id="starting-button" class="starting-button" type="button" title="Starting Point"><ion-icon name="home-outline"></ion-icon> Start node</button>
+        <button id="target-button" class="target-button" type="button" title="Target Point"><ion-icon name="golf-outline"></ion-icon> Target node</button>
+      </div>
+      <button id="barriers-button" class="barriers-button" type="button" title="Barriers"><ion-icon name="close-outline"></ion-icon> Barriers</button>
+      <div class="grid-size-container">
+        <span class="grid-size">Grid size</span>
+        <div class="inputs-container">
+          <div class="input-grp">
+            <span><ion-icon name="ellipsis-vertical-outline"></ion-icon></span>
+            <input type="number" value="10" step="1" min="4" max="30" pattern="[0-9]+" name="rows_count" id="rows_count">
+          </div>
+          <div class="input-grp">
+            <span><ion-icon name="ellipsis-horizontal-outline"></ion-icon></span>
+            <input type="number" value="14" step="1" min="4" max="30" pattern="[0-9]+" name="columns_count" id="columns_count">
+          </div>
+        </div>
+      </div>
+      <button id="simulate-button" class="simulate-button" type="button" title="Simulate"><ion-icon name="planet-outline"></ion-icon>Run BFS</button>
+      <button id="reset-button" class="reset-button" type="button" title="Reset"><ion-icon name="refresh-outline"></ion-icon>Reset grid</button>
+    </div>
+    <div class="hide-show-container">
+      <button type="button" id="toggle"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+    </div>
+  </div>
+  <div id="root">
+    <p>Loading...</p>
+  </div>
+  <div id="checklist">
+    <ul class="list">
+      <li id="check-start" class="check-start">Start</li>
+      <li id="check-target" class="check-target">Target</li>
+      <li id="check-barriers" class="check-barriers">Barriers</li>
+    </ul>
+  </div>
+  <div id="notifications"></div>
+  <script src="script.js"></script>
+</body>
+</html>
