@@ -37,8 +37,8 @@ This project is a web-based simulation of the Breadth-First Search algorithm, de
 
 ### Step 2: Clone the Repository
 ```bash
-git clone [repository-url]
-cd [repository-name]
+git clone https://github.com/shriya02-coder/BFS-Simulation.git
+cd BFS-Simulation
 ```
 
 ### Step 3: Install Extensions
