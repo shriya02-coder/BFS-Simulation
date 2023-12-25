@@ -13,23 +13,21 @@
    - [Open the Project](#step-1-open-the-project)
    - [Start the Live Server](#step-2-start-the-live-server)
 6. [Interacting with the Simulation](#interacting-with-the-simulation)
-7. [Understanding the BFS Algorithm](#understanding-the-bfs-algorithm)
-8. [Features](#features)
-9. [Troubleshooting](#troubleshooting)
-10. [Conclusion](#conclusion)
-11. [Contact](#contact)
+7. [Features](#features)
+8. [Troubleshooting](#troubleshooting)
+9. [Conclusion](#conclusion)
+
 
 ## Introduction
-This project is a web-based simulation of the Breadth-First Search algorithm, designed as part of the internal assessment for Semester 4. It aims to demonstrate how BFS explores vertices and edges in a graph, providing a visual and interactive way to understand the algorithm's dynamics.
+Breadth-First Search is a traversal technique that explores neighbors before moving to the next level neighbors. It's particularly useful for finding the shortest path on unweighted graphs.
 
 ## Objective
-The primary objective of this simulation is to provide a clear and interactive way for students to understand and analyze the working of the Breadth-First Search algorithm, typically used in traversing or searching tree or graph data structures.
+This project is a web-based simulation of the Breadth-First Search algorithm, designed as part of the internal assessment for our Engineering Semester 4. It aims to demonstrate how BFS explores vertices and edges in a graph, providing a visual and interactive way to understand the algorithm's dynamics.
 
 ## Prerequisites
-- Basic knowledge of HTML, CSS, and JavaScript
-- Understanding of the BFS algorithm
-- VSCode or any IDE supporting HTML, CSS, and JavaScript
-- Relevant extensions for HTML, CSS, and JavaScript (e.g., live server)
+- Basic knowledge of web development.
+- Understanding of the BFS algorithm.
+- VSCode or any IDE
 
 ## Installation
 
@@ -63,8 +61,6 @@ For VSCode:
 - Use the provided controls to initiate the BFS algorithm.
 - Observe how BFS traverses the graph, highlighting nodes and paths.
 
-## Understanding the BFS Algorithm
-Breadth-First Search is a traversal technique that explores neighbors before moving to the next level neighbors. It's particularly useful for finding the shortest path on unweighted graphs.
 
 ## Features
 - Interactive graph representation.
@@ -78,5 +74,4 @@ Breadth-First Search is a traversal technique that explores neighbors before mov
 ## Conclusion
 This BFS simulation is designed to enhance learning and provide a visual understanding of the algorithm's functionality. It's a valuable tool for students and educators alike in exploring algorithmic concepts.
 
-## Contact
-For any queries or support, please contact [Your Name/Contact Information].
+
